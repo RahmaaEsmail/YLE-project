@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;@500;@600&display=swap');
+
+:root {
+    --dark-color: rgba(0, 0, 0, 1);
+    --orange-color: rgba(255, 116, 38, 1);
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.profileContainer {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 35px 30px;
+}
+
+li {
+    width: 75%;
+    padding: 5px 8px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+}
+
+.active,
+button:hover {
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    color: rgba(255, 255, 255, 1);
+}
+
+.profileInfo {
+    max-width: 480px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.profileHeading {
+    margin-bottom: 0;
+    font-size: 26px;
+}
+
+.profileParagraph {
+    margin: 5px 0 0;
+}
+
+.profileImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.buttons {
+    padding-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 5px 25px;
+    font-size: 16px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.buttons button:last-child {
+    border: 1px solid rgba(169, 169, 169, 1);
+    background-color: white;
+    color: var(--orange-color);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.buttons button:last-child:hover {
+    border: 1px solid var(--orange-color);
+    background-color: var(--orange-color);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.profileInputs {
+    padding-top: 20px;
+}
+
+.inputsContainer {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputContent {
+    width: 50%;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    width: 90%;
+    padding: 7px;
+    border: 1px solid rgba(170, 170, 170, 1) !important;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin-top: 5px;
+}
+
+::placeholder {
+    color: rgba(191, 191, 191, 1);
+    font-weight: 400;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.radioInputsContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.radioInputsContainer div {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.radioInputsContainer label {
+    color: rgba(191, 191, 191, 1);
+}
+
+.radioInputsContainer input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+    height: 100%;
+    width: 100%;
+    padding: 6px !important;
+    appearance: none;
+    border: none !important;
+    position: relative;
+}
+
+
+input[type="radio"]::before{
+    content: "";
+    position: absolute;
+    padding: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--orange-color);
+}
+
+input[type="radio"]:checked::before  {
+    border: 3px solid var(--orange-color);
+}
+
+.textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid rgba(170, 170,170, 1);
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.saveButtons {
+    margin-top: 10px;
+    display:flex ;
+    gap: 5px;
+}
+
+
+.saveButtons button {
+    padding: 5px 25px;
+    font-size: 16px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.saveButtons button:last-child {
+    border: none;
+    color: var(--orange-color);
+    background-color:white ;
+}
